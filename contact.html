@@ -72,7 +72,11 @@
     <div class="table-title-2">
         <section class="form-container">
             <!-- <form method="post" action="http://www.tulipmemory.com/formmail.php" name="TulipForm"> -->
-            <form method="post" action="https://formsubmit.co/cnc@tulipmemory.com" method="POST" name="TulipForm">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="6d1d7a9d-f65d-45c7-9c82-e4a6d453cc45">
+
                 <!-- <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" /> -->
                 <!-- STEP 2: Put your email address in the 'recipients' value.
                                  Note that you also have to allow this email address in the
@@ -114,8 +118,8 @@
                             <textarea type="textarea" id="message" name="message" tabindex="7" rows="5"></textarea>
                         </label> </p>
                 </fieldset>
-                <input type="hidden" name="good_url" value="thank-you.html" />
-                <input type="hidden" name="bad_url" value="error.html" />
+                <!-- <input type="hidden" name="good_url" value="thank-you.html" />
+                <input type="hidden" name="bad_url" value="error.html" /> -->
 
                 <button type="submit" tabindex="8">Submit Message</button>
                 <script>
@@ -125,7 +129,8 @@
                     });
                 </script>
 
-                <p class="caution center" style="margin-top: 2em;">Your information is safe and respected with us.</p>
+                <p class="caution center" style="margin-top: 2em;">Your information is safe and respected with us. We
+                    never sell your info.</p>
             </form>
 
         </section>
